@@ -1,0 +1,126 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.mongodb.spark",
+    "module": "mongo-spark-connector",
+    "version": "10.0.2-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5-rc-1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "mongo-spark-connector-10.0.2-SNAPSHOT.jar",
+          "url": "mongo-spark-connector-10.0.2-SNAPSHOT.jar",
+          "size": 137635,
+          "sha512": "f9caaba619d6a1a1baa6d93d2de4c1f917254b644bf6291c1fcc703b54ccadcc5db1518cdf42b5002a4a40d48e89e7bb567a041f81c84348b98e9d31f7339b2a",
+          "sha256": "c8510b5b0f82f5232b05d5a5977b822e3ed71a365a1c81942f1f45461aca11ec",
+          "sha1": "54a120a9b479c2cb99c6f031c3f438837bccb098",
+          "md5": "4ec74fe7ebdd7ed8b7391429a016ba54"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.spark",
+          "module": "spark-core_2.13",
+          "version": {
+            "requires": "3.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.apache.spark",
+          "module": "spark-sql_2.13",
+          "version": {
+            "requires": "3.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.apache.spark",
+          "module": "spark-catalyst_2.13",
+          "version": {
+            "requires": "3.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.apache.spark",
+          "module": "spark-streaming_2.13",
+          "version": {
+            "requires": "3.4.0-SNAPSHOT"
+          }
+        },
+        {
+          "group": "org.mongodb",
+          "module": "mongodb-driver-sync",
+          "version": {
+            "requires": "[4.5.0,4.5.99)"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "mongo-spark-connector-10.0.2-SNAPSHOT.jar",
+          "url": "mongo-spark-connector-10.0.2-SNAPSHOT.jar",
+          "size": 137635,
+          "sha512": "f9caaba619d6a1a1baa6d93d2de4c1f917254b644bf6291c1fcc703b54ccadcc5db1518cdf42b5002a4a40d48e89e7bb567a041f81c84348b98e9d31f7339b2a",
+          "sha256": "c8510b5b0f82f5232b05d5a5977b822e3ed71a365a1c81942f1f45461aca11ec",
+          "sha1": "54a120a9b479c2cb99c6f031c3f438837bccb098",
+          "md5": "4ec74fe7ebdd7ed8b7391429a016ba54"
+        }
+      ]
+    },
+    {
+      "name": "shadowRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "shadowed",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.mongodb",
+          "module": "mongodb-driver-sync",
+          "version": {
+            "requires": "[4.5.0,4.5.99)"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "mongo-spark-connector-10.0.2-SNAPSHOT-all.jar",
+          "url": "mongo-spark-connector-10.0.2-SNAPSHOT-all.jar",
+          "size": 2303093,
+          "sha512": "7e058d9fccbe8be840bc17e7a65ec21ea45fda4b981b1f049881af5e7a943a54827ee46ff28414a8ecd48102f4e6c13a72b719507c6a349db8a9408c8fff7f6a",
+          "sha256": "511fc8a863ac852a14b42341b10cdeef95e26b493a1c27190bb6e6edf4eb0abb",
+          "sha1": "0ae313281df5e1e72632b9f79a684e1c82c968e0",
+          "md5": "d8b04c99174a9dc96eb2d082026da211"
+        }
+      ]
+    }
+  ]
+}
